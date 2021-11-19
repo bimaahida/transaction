@@ -1,12 +1,15 @@
 {
+    "environment": "dev",
     "server": {
         "address": ":8080"
     },
     "database": {
-        "host": "mysql",
-        "port": "3306",
-        "user": "user",
-        "pass": "password",
-        "name": "article"
+        "server": "mongodb://cluster0-shard-00-01.lb8zb.mongodb.net:27017",
+        "database": "transaction",
+        "user": "admin",
+        "pass": "admin"
+    },
+    "context":{
+        "timeout":2
     }
 }
